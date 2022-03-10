@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body style background="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+    <table style border="1">
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <td>Tony</td>
+            <td>Stark</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Bruce</td>
+            <td>Wayne</td>
+            <td>35</td>
+        </tr>
+    </table>
+    <p id="Hero">This is my first paragraph for the Superhero.</p>
+    <p class="League">This is my second paragraph for the League of Superheros.</p>
+    <label style="color:red"> Super Powers</label>
+    <form action="" method="">
+        <label for="fname">First name:</label>
+        <input type="text" placeholder="Real First Name" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="password" placeholder="Real Last Name" id="lname" name="lname"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" placeholder="Relative Age" id="age" name="age"><br><br>
+        <label for="tel">Telephone:</label>
+        <input type="tel" placeholder="(xxx)xxx-xxxx" id="tel" name="tel"><br><br>
+        
+<hr>
+        <h1>What is your favorite color?</h1>
+        <input type="radio" id="red" name="fav_color" value="red">
+        <label for="red">Red</label><br>
+        <input type="radio" id="blue" name="fav_color" value="blue">
+        <label for="blue">Blue</label><br>
+        <hr>
+        <h1>What are your favorite foods</h1>
+        <input type="checkbox" id="pizza" name="fav_food" value="Pizza">
+        <label for="pizza"> Pizza is the Best!</label><br>
+        <input type="checkbox" id="hamburgers" name="fav_food" value="Hamburgers">
+        <label for="hamburgers"> Hamburgers are Awesome!</label><br>
+        <hr>
+        <label for="feedback">Customer Review:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50">
+        This is a text-area where you can submit feedback on this page:
+        </textarea> 
+        <hr>
+        <label for="satisfaction">Were you pleased with the form?:</label>
+        <select name="satisfaction" id="satisfaction">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptates quisquam repellendus possimus. <span>Nostrum</span>, quaerat sunt delectus ullam sapiente illo cumque temporibus doloremque illum quis ipsum magni et assumenda vero!</p>
+        <br>
+        <br>
+        <br>
+        <h1><span>Inner HTML of H1 tag is in an Inline element</span></h1>
+        <button>this is an inline button</button>
+        <input type="time">
+        <input type='date'>
+        <h1>Inner HTML of H1 tag set with Block Element</h1>
+        <header style= "background-color:bisque;">This is the header of an Magazine</header>  
+            <main style= "background-color:blue;">This is the main body of the Page
+                <section style= "background-color:aquamarine;">This is the Health section of the Magazine
+                    <article style= "background-color:aliceblue;">This is an article by a Particular Author in the Heath Section</article>
+                </section>
+                <aside style= "background-color:aqua;">This is aside content that is related to health but is not included in the main portion of the magazine, Ex: Classified Ads by Health providers in the area. 
+                </aside>
+            </main>
+        <footer style= "background-color:royalblue;">This is the footer of an Magazine</footer>
+    </div>
+    
+    
+        <script src="" async defer></script>
+        <!-- Week 2 Homework 2- Tables, Forms, and More
+1) In your "week2" repo, add a new file named "day2.html"
+2) In "day2.html" add your html boiler plate
+3) Create an html table element, it should:
+- have 3 columns: First Name, Last Name & Age.
+- It should have 3 rows with data in each cell
+4) Create a paragraph element with an id attribute set to a unique value
+5) Create a paragraph element with a class set to a unique value
+6) Create a label tag, the label tag should include:
+- A for attribute set to a unique value
+7) Create a form tag, the form should include:
+- The action & method attributes can be blank or omitted for now
+- an input with the type of text, it should:
+- Have placeholder text of your choosing
+- an id with a value that matches the for attribute of the label from the previous step
+- a name with a value that matches the value of the id attribute
+- should have the required attribute
+NOTE: steps 8 - 15 will all be a part of the same form as above
+8) Create 3 more inputs (for a total of 4 in this form so far), each should have a label and be of a type that has not been previously used.
+9) Create an <h1> element with the inner HTML set to "What is your favorite color?" e.g. <h1>What is your favorite color?</h1>
+10) Create two radio buttons (multiple choice), they should...
+- Only be able to select one at a time, HINT: same name attribute value
+- They should have a <label> element before them to label each radio button option
+- They should have a value that is appropriate to the label inner HTML
+- Carry a value associated with the corresponding label
+11) Create an <h1> element with the inner HTML set to "What are your favorite foods?"
+12) Create at least two checkboxes, they should...
+- All have the same value for the name attribute
+- All should have a <label> element before them to label each checkbox option
+- They should have a value that is appropriate to the label inner HTML
+13) Include one <textarea> element
+14) A select dropdown, it should...
+- A name attribute (the select element)
+- Have at least two option element children with value attributes
+15) A submit button, can be either an input element or a button element but must have a type of submit
+16) Create a div element with a paragraph element nested inside of it
+17) The paragraph element should have some dummy text, choose one word from the dummy text and surround it in a <span> tag
+18) Enter three <br> tags
+19) Create an h1 element with the innerHTML set to inline elements
+20) Create 3 different inline elements
+21) Create an h1 element with the innerHTML set to block elements
+22) Create 3 different block elements -->
+    </body>
+</html>
